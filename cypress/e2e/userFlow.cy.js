@@ -9,7 +9,7 @@ describe('Full UI Flow - Social Media App', () => {
     cy.get('#registerForm').submit();
 
     cy.on('window:alert', (msg) => {
-      expect(msg).to.include('User registered'); // adjust if your alert text differs
+      expect(msg).to.include('User registered'); 
     });
   });
 
